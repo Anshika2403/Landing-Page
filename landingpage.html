@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/868cedf20e.js" crossorigin="anonymous"></script>
+    <style>
+        #first{
+            /*background-color:rgb(110, 7, 67);*/
+            background-color:rgb(31, 35, 71);
+            height:50px;
+            width:1342px;
+        }
+       #nav{
+        display: grid;
+        grid-template-columns: 85px 85px 95px 85px;
+        margin: 0px 500px;
+        color:white;
+        padding: 15px;
+        cursor: pointer;
+       }
+       .head{
+        /*border:2px solid white;*/
+        margin:0px 5px;
+        padding:3px;
+        font-size: 20px;
+       }
+       #des{
+           height:700px;
+           width:1342px;
+           position: relative;
+        }
+        #des::before{
+            content: "";
+            /*background-image: url('https://gumlet.assettype.com/outlooktraveller%2F2023-09%2F2481cd27-939e-4686-a995-e613ba3b7efe%2Fshutterstock_1378533041.jpg?format=auto');*/
+            background-image: url('https://images.pexels.com/photos/40547/fair-fairground-ferris-wheel-carousel-40547.jpeg?cs=srgb&dl=pexels-pixabay-40547.jpg&fm=jpg');
+            background-size: 1342px 700px;
+            background-repeat: no-repeat; 
+            opacity:0.8;   
+            position: absolute;
+            inset: 0;
+       }
+       #cont{
+           padding:40px;
+           isolation: isolate;
+           margin: 0px 10px;
+        }
+        #name{
+            font-size:160px;
+            color:white;
+            text-shadow: 0px 0px; 
+        }
+        #slo{
+            /*text-shadow:2px 2px rgb(110, 7, 67);*/
+            margin:0px 30px;
+            /*color:rgb(68, 4, 4);*/
+            color: black;
+            font-size:50px;
+       }
+       #pub{
+        color:black;
+        font-size: 20px;
+        /*text-shadow: 2px 2px black;*/
+        margin: 0px 40px;
+       }
+       #last{
+        display:grid;
+        grid-template-columns: 250px 250px;
+        margin:50px 450px;
+       }
+       .book{
+        isolation: isolate;
+        border: 2px solid white;
+        width:100px;
+        height:20px;
+        padding:20px 50px;
+        font-size: 20px;
+        border-radius: 60px ;
+        color: white;
+        cursor: pointer;
+       }
+       .book:hover{
+        background-color: rgb(31, 35, 71);
+       }
+       #call{
+        padding:20px 55px;
+       }
+       i{
+        padding: 4px;
+       }
+       #ride{
+        margin:50px 168px;
+        display: grid;
+        grid-template-columns: repeat(4,250px);
+        height: 400px;
+        width:150px;
+       }
+       
+    .im{
+           border:2px solid black;
+           border-radius: 50%;
+        height: 150px;
+        width:150px;
+       }
+       .rides{
+        height:20px;
+        margin:10px 5px;
+        text-align:center;
+        
+       }
+       #part{
+        display:grid;
+        grid-template-rows: repeat(4,200px);
+       /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiE7fCRwG6PuRLdpAbbTROcI3hzgdNlb2wvA&usqp=CAU');
+        background-repeat: no-repeat;*/
+        background-color: rgb(231, 233, 236);
+        background-size: 1342px 1500px; 
+        
+       }
+       .booking{
+        border:2px solid black;
+        margin:10px 250px;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right,white,rgb(31, 35, 71));
+        padding:20px 30px;
+        font-size:25px;
+       }
+       .cost{
+        position:relative;
+        bottom:90px;
+        left:600px;
+       }
+       .buy{
+        border:2px solid rgb(31, 35, 71);
+        border-radius:30px;
+        background-color: white;
+        margin:20px 0px;
+        height:50px;
+        width:150px;
+        font-size: 15px;
+        cursor: pointer; 
+        transition:background-color 0.5s ease-in;
+       }
+       .buy:hover{
+        background-color: rgb(31, 35, 71);
+        
+       }
+       #tick{
+        text-align: center;
+        color: rgb(31, 35, 71);
+       }
+      
+    </style>
+</head>
+<body>
+    <div id="first">
+    <header id="nav">
+       <div class="head" id="head1">Home</div>
+       <div class="head" id="head2">About</div>
+       <div class="head" id="head3">Services</div>
+       <div class="head" id="head4">Contact</div>
+    </header>
+    </div>
+    <section id="des">
+    <div id="cont">
+        <div id="name">Wonder World</div>
+         <div id="slo"><b>Your Magical Adventure Starts Here....</b></div>
+         <div id="pub"><b>Over 1,00,000 visitors each year</b></div>
+    </div>
+    <div id="last">
+        <div id="on" class="book">Book Here</div>
+        <div id="call" class="book">
+            <i class="fas fa-phone"></i>Call us</div>
+    </div>
+    </section>
+    <section>
+        <div id="ride">
+            <div class="rides" id="wat">
+              <img src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3750/x_0,y_0,w_5000,h_2811,r_0,c_crop,q_80,fl_progressive/w_400,f_auto,c_fit/black-thunder---water-theme-park/Lucky_Ariel_vttsit" class="im">
+              <h1>Water Rides</h1>
+               Dive into a world of aquatic excitement where the sun always shines, and the water is always refreshing! Immerse yourself in a thrilling aquatic adventure designed to delight visitors of all ages.
+            </div>
+            <div class="rides" id="roll">
+               <img src="https://cloudfront-us-east-1.images.arcpublishing.com/cmg/PB37IQ7RIZH4BOINLODY6YKEGI.jpg" class="im">
+               <h1> Roller Coaster</h1>
+               Get ready for the ride of a lifetime at TurboTwist Coaster Haven – where adrenaline meets gravity-defying excitement! Brace yourself for the ultimate roller coaster experience that will leave you breathless and craving more.
+            </div>
+            <div class="rides" id="haunt">
+                <img src="https://images.squarespace-cdn.com/content/v1/6322203504426c5719f93d9c/68efea6d-ea3c-487f-8a87-97b62936fa94/tsf16-hauntedhouse005.jpg" class="im">
+                <h1>Haunted House</h1>
+                Are you ready to face your deepest fears and embark on a spine-chilling journey into the unknown? Here the eerie whispers of the past and the ghostly presence of the unknown come to life!
+            </div>
+            <div class="rides" id="bun">
+               <img src="https://jumppartytexas.com/wp-content/uploads/2017/02/Jump-Party-Texas-Ultimate-Bungee-1-500x353.jpg" class="im">
+               <h1>Bunjee Jumping</h1>
+               Experience the thrill of a lifetime.. here we've taken trampoline fun to the next level with our incredible bungee jumping trampolines! Get ready to defy gravity, bounce to the sky, and unleash your inner daredevil.
+            </div>
+        </div>
+    </section>
+    <h1 id="tick">Tickets Available</h1>
+    <section id="part">
+        <div class="booking">
+            <p>Includes all 4 rides<br>
+            </p>
+            <i class="fas fa-user"> </i>1 Person
+            <div class="cost">
+                Cost:<i class="fas fa-rupee-sign"></i>2000<br>
+                <button type="button" class="buy">Buy Now</button>
+            </div>
+        </div>
+        <div class="booking">
+            <p>Includes all 4 rides<br>
+            </p>
+            <i class="fas fa-user"> </i>2 Persons
+            <div class="cost">
+                Cost:<i class="fas fa-rupee-sign"></i>3000<br>
+                <button type="button" class="buy">Buy Now</button>
+            </div>  
+        </div>
+        <div class="booking">
+            <p>Combo of any two<br>
+            </p>
+            <i class="fas fa-user"> </i>1 Person
+            <div class="cost">
+                Cost:<i class="fas fa-rupee-sign"></i>1500<br>
+                <button type="button" class="buy">Buy Now</button>
+            </div>
+        </div>
+        <div class="booking">
+            <p>Any one ride<br>
+            </p>
+            <i class="fas fa-user"> </i>1 Person
+            <div class="cost">
+                Cost:<i class="fas fa-rupee-sign"></i>1000<br>
+                <button type="button" class="buy">Buy Now</button>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>
